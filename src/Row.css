@@ -8,6 +8,7 @@
   overflow-y: hidden;
   overflow-x: scroll;
   padding: 20px;
+  position: relative;
 }
 
 .row__posters::-webkit-scrollbar {
@@ -34,4 +35,29 @@
 .row__posterLarge:hover {
   transform: scale(1.09);
   opacity: 1;
+}
+
+.row__leftArrow {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  -ms-transform: translate(-45%, -5%);
+  transform: translate(-45%, -5%);
+}
+.row__rightArrow {
+  position: absolute;
+  top: 45%;
+  right: 5%;
+  -ms-transform: translate(-45%, -5%);
+  transform: translate(-45%, -5%);
+}
+
+.row__arrow {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  z-index: 1000;
+}
+
+.row__arrow:hover {
+  cursor: pointer;
 }
